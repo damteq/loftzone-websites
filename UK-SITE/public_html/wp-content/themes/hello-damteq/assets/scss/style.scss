@@ -1,17 +1,17 @@
 /*!
-	Theme Name: Hello Damteq
-	Theme URI: https://www.damteq.co.uk
-	Description: A plain-vanilla & lightweight theme for Elementor page builder
-	Author: Damteq®
-	Author URI: https://www.damteq.co.uk
-	Version: 2.0.0
-	Stable tag: 2.0.0
-	Requires at least: 4.7
-	Tested up to: 5.2
-	License: GNU General Public License v3 or later.
-	License URI: https://www.gnu.org/licenses/gpl-3.0.html
-	Text Domain: damteq
-	Tags: flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+        Theme Name: Hello Damteq
+        Theme URI: https://www.damteq.co.uk
+        Description: A plain-vanilla & lightweight theme for Elementor page builder
+        Author: Damteq®
+        Author URI: https://www.damteq.co.uk
+        Version: 2.0.0
+        Stable tag: 2.0.0
+        Requires at least: 4.7
+        Tested up to: 5.2
+        License: GNU General Public License v3 or later.
+        License URI: https://www.gnu.org/licenses/gpl-3.0.html
+        Text Domain: damteq
+        Tags: flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
 */
 
 /* Style - include Theme style
@@ -36,3 +36,40 @@
 
 // Custom Code for Your Website
 @import "custom/custom";
+
+
+/*MI ADDITIONS 15-May-2020*/
+
+.woocommerce-cart-form{
+    table{
+        &.shop_table{
+            thead{
+                tr{
+                    th{
+                        &.product-quantity{
+                            width:200px;
+                        }
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        &.product-quantity{
+                            .quantity{
+                                input{
+                                    &.qty{
+                                        text-align:left !important;
+                                        width:5.780em !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+}
