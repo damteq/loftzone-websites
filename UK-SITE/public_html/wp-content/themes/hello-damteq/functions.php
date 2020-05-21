@@ -80,7 +80,7 @@ if (!function_exists('damteq_theme_scripts_styles')) {
 
         if (apply_filters('damteq_theme_enqueue_style', true)) {
             wp_enqueue_style('damteq_theme-style', get_stylesheet_uri());
-            wp_enqueue_style('default_layout_css', get_template_directory_uri() . 'assets/scss/style.min.css', false, '1.2', 'all');
+            wp_enqueue_style('default_layout_css', get_template_directory_uri() . '/assets/scss/style.min.css', false, '1.2', 'all');
 //            wp_enqueue_style('damteq-styles', get_template_directory_uri() . '/assets/scss/style.min.css');
             wp_enqueue_style('theme-styles', get_template_directory_uri() . '/theme' . $min_suffix . '.css');
 
