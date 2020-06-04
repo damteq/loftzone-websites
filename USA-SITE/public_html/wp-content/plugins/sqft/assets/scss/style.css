@@ -1,0 +1,73 @@
+/* TYPOGRAPHY */
+#container-damteq_calculator h1, #container-damteq_calculator h2, #container-damteq_calculator h3, #container-damteq_calculator h4, #container-damteq_calculator h5, #container-damteq_calculator h5, #container-damteq_calculator h6 {
+  font-family: "Nunito", Sans-serif;
+  font-weight: 700; }
+#container-damteq_calculator p, #container-damteq_calculator a, #container-damteq_calculator span, #container-damteq_calculator label, #container-damteq_calculator input, #container-damteq_calculator ::after, #container-damteq_calculator ::before {
+  font-family: "Nunito", Sans-serif; }
+#container-damteq_calculator p {
+  font-size: .85rem;
+  letter-spacing: .4px;
+  line-height: 1.8;
+  margin-bottom: 2rem; }
+
+/* FORM */
+form#damteq_calculator .surface span {
+  color: #0a0a0a; }
+form#damteq_calculator .field {
+  position: relative;
+  margin: 0 0 1.5em; }
+  form#damteq_calculator .field label {
+    text-transform: uppercase;
+    font-size: .7rem;
+    color: #f1592b;
+    background: #f8f8f8;
+    position: absolute;
+    top: -5px;
+    left: 9px;
+    padding: 0 .5em;
+    z-index: 1; }
+  form#damteq_calculator .field .control {
+    display: flex;
+    position: relative;
+    width: 100%; }
+    form#damteq_calculator .field .control::after {
+      content: 'use multiples of 4ft only';
+      background: #f8f8f8;
+      font-size: .65rem;
+      text-transform: capitalize;
+      position: absolute;
+      bottom: -.5rem;
+      right: 6rem;
+      padding: 0 .5em; }
+    form#damteq_calculator .field .control input {
+      border-radius: 2px;
+      text-align: end;
+      border-color: #dedede;
+      background-color: #f8f8f8; }
+    form#damteq_calculator .field .control input:-webkit-autofill,
+    form#damteq_calculator .field .control input:-webkit-autofill:hover,
+    form#damteq_calculator .field .control input:-webkit-autofill:focus,
+    form#damteq_calculator .field .control textarea:-webkit-autofill,
+    form#damteq_calculator .field .control textarea:-webkit-autofill:hover,
+    form#damteq_calculator .field .control textarea:-webkit-autofill:focus,
+    form#damteq_calculator .field .control select:-webkit-autofill,
+    form#damteq_calculator .field .control select:-webkit-autofill:hover,
+    form#damteq_calculator .field .control select:-webkit-autofill:focus {
+      border-color: #dedede; }
+    form#damteq_calculator .field .control input[type=number]::-webkit-inner-spin-button,
+    form#damteq_calculator .field .control input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+    form#damteq_calculator .field .control span {
+      color: #0a0a0a;
+      padding: .5em 1em;
+      background-color: #dedede;
+      border-radius: 0 2px 2px 0;
+      border: solid 1px #dedede;
+      border-left: 0; }
+
+.damteq_totals span {
+  color: #0a0a0a;
+  font-weight: 700; }
+
+/*# sourceMappingURL=style.css.map */

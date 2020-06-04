@@ -1,0 +1,100 @@
+/* TYPOGRAPHY */
+$black: #0a0a0a;
+$white: #fff;
+$light: #f8f8f8;
+$dark: #dedede;
+$orange: #f1592b;
+
+$nunito: "Nunito", Sans-serif;
+
+#container-damteq_calculator {
+  h1, h2, h3, h4, h5, h5, h6 {
+    font-family: $nunito;
+    font-weight: 700;
+  }
+  p, a, span, label, input, ::after, ::before {
+    font-family: $nunito;
+  }
+  p {
+    font-size: .85rem;
+    letter-spacing: .4px;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+}
+
+/* FORM */
+form#damteq_calculator {
+  .surface {
+    span {
+      color: $black;
+    }
+  }
+  .field {
+    position: relative;
+    margin: 0 0 1.5em;
+    label {
+      text-transform: uppercase;
+      font-size: .7rem;
+      color: $orange;
+      background: $light;
+      position: absolute;
+      top: -5px;
+      left: 9px;
+      padding: 0 .5em;
+      z-index: 1;
+    }
+    .control {
+      display: flex;
+      position: relative;
+      width: 100%;
+      &::after {
+        content: 'use multiples of 4ft only';
+        background: $light;
+        font-size: .65rem;
+        text-transform: capitalize;
+        position: absolute;
+        bottom: -.5rem;
+        right: 6rem;
+        padding: 0 .5em;
+      }
+      input {
+        border-radius: 2px;
+        text-align: end;
+        border-color: $dark;
+        background-color: $light;
+      }
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      textarea:-webkit-autofill,
+      textarea:-webkit-autofill:hover,
+      textarea:-webkit-autofill:focus,
+      select:-webkit-autofill,
+      select:-webkit-autofill:hover,
+      select:-webkit-autofill:focus {
+        border-color: $dark;
+      }
+      input[type=number]::-webkit-inner-spin-button,
+      input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      span {
+        color: $black;
+        padding: .5em 1em;
+        background-color: #dedede;
+        border-radius: 0 2px 2px 0;
+        border: solid 1px #dedede;
+        border-left: 0;
+      }
+    }
+  }
+}
+
+.damteq_totals {
+  span {
+    color: $black;
+    font-weight: 700;
+  }
+}

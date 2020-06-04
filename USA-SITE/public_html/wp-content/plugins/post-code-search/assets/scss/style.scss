@@ -1,0 +1,97 @@
+/* TYPOGRAPHY */
+$black: #0a0a0a;
+$white: #fff;
+$orange: #f1592b;
+
+/* POSTCODE FORM */
+#postcode-container {
+  max-width: 600px;
+  /*margin: 0 auto;
+  padding: 4em 1em;*/
+  font-family: 'Roboto', sans-serif;
+  color: $white;
+  h2, h3 {
+    text-transform: capitalize;
+    font-weight: 600;
+    color: $white;
+  }
+  form#postcode-form {
+    .field {
+      position: relative;
+      margin: 1em 0;
+      label {
+        text-transform: uppercase;
+        font-size: .7rem;
+        background: $white;
+        position: absolute;
+        top: -6px;
+        left: 9px;
+        padding: 0 .5em;
+      }
+      input {
+        border-radius: 2px;
+      }
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      textarea:-webkit-autofill,
+      textarea:-webkit-autofill:hover,
+      textarea:-webkit-autofill:focus,
+      select:-webkit-autofill,
+      select:-webkit-autofill:hover,
+      select:-webkit-autofill:focus {
+        border-color: $orange;
+      }
+      button {
+        border-radius: 2px;
+        border: none;
+        text-transform: capitalize;
+        background-color: $orange;
+        color: $white;
+        padding: .9375rem 2.5rem;
+        &:hover {
+          background-color: #525252;
+          color: $white;
+        }
+      }
+    }
+  }
+  .postcode-card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    a {
+      height: 130px;
+      width: 48.5%;
+      padding: 1em;
+      margin: .5em 0;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      background: $orange;
+      transition: ease-out all .2s;
+      &:hover {
+        transform: scale(1.05);
+      }
+      .postcode-card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        span {
+          font-size: .875rem;
+        }
+      }
+    }
+  }
+}
+
+//iPad down
+@media screen and (max-width: 63.9375em) {
+  #postcode-container {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
